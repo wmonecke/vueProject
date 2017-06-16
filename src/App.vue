@@ -1,27 +1,31 @@
 <template>
   <div id="app">
     <hello></hello>
+    <hr>
+    <div class="repeat" v-for="server in 5">
+      <my-server-status></my-server-status>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+  import Hello from './components/Hello'
 
-export default {
-  name: 'app',
-  components: {
-    Hello
+  export default {
+    name: 'app',
+    components: {
+      Hello
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>

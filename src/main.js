@@ -2,9 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import ServerStatus from './components/ServerStatus'
 
-Vue.config.productionTip = false
-
+Vue.component('my-server-status', ServerStatus)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

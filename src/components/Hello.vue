@@ -1,5 +1,8 @@
 <template>
-  <h1> Hello World !</h1>
+  <div>
+    <h1> Hello World !</h1>
+    <home-component></home-component>
+  </div>
 </template>
 
 <script>
